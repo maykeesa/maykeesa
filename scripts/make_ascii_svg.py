@@ -88,10 +88,10 @@ def colorir(linha: str) -> str:
     )
 
 
-def desenhar_grade(grade: list[str], x: float, y: float, largura: float, altura: float, prefixo: str) -> tuple[str, str]:
+def desenhar_grade(grade: list[str], x: float, y: float, largura: float, altura: float, prefixo: str, colunas: int | None = None) -> tuple[str, str]:
     """Devolve (clips, textos) com a grade espremida em (x, y, largura, altura)."""
     altura_linha = altura / len(grade)
-    colunas = max(len(l) for l in grade)
+    colunas = colunas or max(len(l) for l in grade)
     largura_char = largura / colunas
     clips, textos = [], []
     for n, linha in enumerate(grade):
