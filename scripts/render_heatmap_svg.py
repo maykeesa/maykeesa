@@ -3,7 +3,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-from tema import APAGADO, ESTATICO, abrir_svg, caixa, moldura
+from tema import APAGADO, ESTATICO, abrir_svg, caixa, moldura, prompt
 
 RAIZ = Path(__file__).resolve().parent.parent
 ENTRADA = RAIZ / "data" / "contributions.json"
@@ -118,7 +118,7 @@ def renderizar(dados: dict) -> str:
 {caixa(18, 58, LARGURA - 36, 38)}
 {tabs.replace('y="84"', 'y="83"')}
 {caixa(18, caixa_conteudo_y, LARGURA - 36, altura - caixa_conteudo_y - 18, APAGADO, 0.9)}
-<text class="cabecalho" x="32" y="{caixa_conteudo_y + 26}">&gt; {dados["total"]} CONTRIBUICOES NOS ULTIMOS 12 MESES <tspan class="cursor">_</tspan></text>
+<text x="32" y="{caixa_conteudo_y + 26}" style="font-size:12px">{prompt("./contributions.sh")} <tspan class="cursor">_</tspan></text>
 {"".join(r for _, r in rotulos_mes)}
 {rotulos_dia}
 {"".join(celulas)}

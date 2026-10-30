@@ -11,7 +11,7 @@ from xml.sax.saxutils import escape
 import numpy as np
 from PIL import Image, ImageDraw
 
-from tema import APAGADO, BRANCO, ESTATICO, MEDIO, VERDE, abrir_svg, caixa, moldura
+from tema import APAGADO, BRANCO, ESTATICO, MEDIO, VERDE, abrir_svg, caixa, moldura, prompt
 
 RAIZ = Path(__file__).resolve().parent.parent
 ENTRADA = RAIZ / "data" / "portrait-prepped.png"
@@ -121,7 +121,7 @@ def renderizar() -> str:
     clips, textos = desenhar_grade(gerar_grade(imagem, COLUNAS), 22, 40, largura - 44, altura - 60, "l")
     css = f"text{{white-space:pre}}\n{CSS_FAIXAS}"
     corpo = f"""<defs>{clips}</defs>
-{moldura(largura, altura, "NEURAL.TXT", "PORT......1")}
+{moldura(largura, altura, prompt("whoami"))}
 {caixa(16, 34, largura - 32, altura - 50, APAGADO, 0.8)}
 <g class="glitch" xml:space="preserve">
 {textos}

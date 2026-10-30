@@ -27,6 +27,15 @@ CSS_ANIMADO = """
 """
 
 
+def prompt(comando: str) -> str:
+    """Linha de terminal (usuário@host ~ $ comando) como <tspan>s, pra usar dentro de <text>."""
+    return (
+        f'<tspan class="forte" style="letter-spacing:.3px">maykeesa@github</tspan>'
+        f'<tspan class="dim" style="letter-spacing:.3px"> ~ $ </tspan>'
+        f'<tspan style="letter-spacing:.3px">{comando}</tspan>'
+    )
+
+
 def caixa(x: float, y: float, largura: float, altura: float, cor: str = BORDA, espessura: float = 1.2) -> str:
     return (
         f'<rect x="{x}" y="{y}" width="{largura}" height="{altura}" fill="none" '

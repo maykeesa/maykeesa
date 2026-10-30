@@ -24,7 +24,7 @@ text{white-space:pre}
 <rect width="370" height="400" fill="url(#scan)"/>
 <rect x="0.6" y="0.6" width="368.8" height="398.8" fill="none" stroke="#2a8c74" stroke-width="1.2"/>
 <rect x="4.5" y="4.5" width="361" height="391" fill="none" stroke="#1f6a56" stroke-width="0.8"/>
-<text class="cabecalho dim" x="14" y="19">NEURAL.TXT</text><text class="cabecalho fraco" x="356" y="19" text-anchor="end">PORT......1</text><line x1="4.5" y1="26" x2="365.5" y2="26" stroke="#1f6a56" stroke-width="0.8"/>
+<text class="cabecalho dim" x="14" y="19"><tspan class="forte" style="letter-spacing:.3px">maykeesa@github</tspan><tspan class="dim" style="letter-spacing:.3px"> ~ $ </tspan><tspan style="letter-spacing:.3px">whoami</tspan></text><text class="cabecalho fraco" x="356" y="19" text-anchor="end"></text><line x1="4.5" y1="26" x2="365.5" y2="26" stroke="#1f6a56" stroke-width="0.8"/>
 <rect x="16" y="34" width="338" height="350" fill="none" stroke="#1f6a56" stroke-width="0.8"/>
 <g class="glitch" xml:space="preserve">
 <text x="22" y="44.53" textLength="326.00" lengthAdjust="spacingAndGlyphs" style="font-size:4.44px" clip-path="url(#l0)"><tspan class="t3">sssssccssssscssssc</tspan><tspan class="t2">-</tspan>                                                                                                            <tspan class="t1">:</tspan><tspan class="t3">cssssssssssssssssssscc</tspan></text>

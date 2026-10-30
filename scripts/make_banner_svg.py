@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 from make_ascii_svg import CSS_FAIXAS, desenhar_grade, gerar_grade
-from tema import APAGADO, ESTATICO, abrir_svg, caixa, moldura
+from tema import APAGADO, ESTATICO, abrir_svg, caixa, moldura, prompt
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "stack-banner.svg"
@@ -50,7 +50,7 @@ def renderizar() -> str:
     if not ESTATICO:
         css += ".ln{opacity:0;animation:entra .4s steps(4) forwards}\n@keyframes entra{to{opacity:1}}\n"
     corpo = f"""<defs>{clips}</defs>
-{moldura(LARGURA, ALTURA, "STACK.SYS", "PORT......4")}
+{moldura(LARGURA, ALTURA, prompt("ls ./stack"), "PORT......4")}
 {caixa(16, 38, 400, ALTURA - 54, APAGADO, 0.8)}
 {"".join(linhas)}
 <text class="fraco" x="24" y="{ALTURA - 26}">&gt; HOT-SWAP OK <tspan class="cursor">_</tspan></text>
