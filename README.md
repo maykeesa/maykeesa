@@ -8,7 +8,7 @@
 <img src="./divider.svg" width="860" alt="" />
 </p>
 
-<p align="center">
+<p align="left">
 <a href="https://www.linkedin.com/in/maykeesa/"><img src="https://img.shields.io/badge/LINKEDIN-8ff7d4?style=for-the-badge&labelColor=020b09" alt="LinkedIn" /></a>
 <a href="mailto:maykeesa.contato@gmail.com"><img src="https://img.shields.io/badge/EMAIL-8ff7d4?style=for-the-badge&labelColor=020b09" alt="Email" /></a>
 <a href="https://steamcommunity.com/id/MaykeESA/"><img src="https://img.shields.io/badge/STEAM-8ff7d4?style=for-the-badge&labelColor=020b09" alt="Steam" /></a>
