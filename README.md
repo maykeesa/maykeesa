@@ -1,11 +1,11 @@
 <p align="left">
-<img src="./contrib-heatmap.svg" width="100%" alt="Gráfico de contribuições de Mayke nos últimos 12 meses" /><br>
-<img src="./mayke-ascii.svg" width="43%" alt="Arte ASCII em verde fósforo" /><img src="./info-card.svg" width="56.9%" alt="Mayke Erick S. Andrade · Desenvolvedor Back-end · Java, Spring Boot, Kotlin, Groovy, Python" /><br>
-<img src="./stack-banner.svg" width="100%" alt="Stack: Java, Kotlin, Groovy, Python, Spring Boot, Grails, JPA, PostgreSQL, MySQL, Oracle, MongoDB, Docker, RabbitMQ, Git, Linux" />
+<img src="./contrib-heatmap.svg?v=2" width="100%" alt="Gráfico de contribuições de Mayke nos últimos 12 meses" /><br>
+<img src="./mayke-ascii.svg?v=2" width="43%" alt="Arte ASCII em verde fósforo" /><img src="./info-card.svg?v=2" width="56.9%" alt="Mayke Erick S. Andrade · Desenvolvedor Back-end · Java, Spring Boot, Kotlin, Groovy, Python" /><br>
+<img src="./stack-banner.svg?v=2" width="100%" alt="Stack: Java, Kotlin, Groovy, Python, Spring Boot, Grails, JPA, PostgreSQL, MySQL, Oracle, MongoDB, Docker, RabbitMQ, Git, Linux" />
 </p>
 
 <p align="left">
-<img src="./divider.svg" width="100%" alt="" />
+<img src="./divider.svg?v=2" width="100%" alt="" />
 </p>
 
 <p align="left">
