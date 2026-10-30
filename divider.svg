@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="34" viewBox="0 0 860 34">
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:11px;fill:#8ff7d4}
+.dim{fill:#3fae8f}.fraco{fill:#1f6a56}.forte{fill:#e8fff7;font-weight:700}
+.cabecalho{font-size:11px;letter-spacing:1.5px}
+
+.cursor{animation:pisca 1s steps(1) infinite}
+@keyframes pisca{50%{opacity:0}}
+.glitch{animation:glitch 5s infinite steps(1)}
+@keyframes glitch{0%,93%,100%{transform:none}94%{transform:translateX(-2px)}96%{transform:translateX(3px)}98%{transform:translateX(-1px)}}
+.varre{animation:varre 7s linear infinite}
+@keyframes varre{from{transform:translateY(0)}to{transform:translateY(var(--h))}}
+</style>
+<line x1="0" y1="17" x2="860" y2="17" stroke="#2a8c74" stroke-width="1.2"/>
+<rect x="0" y="9" width="6" height="16" fill="#2a8c74"/><rect x="854" y="9" width="6" height="16" fill="#2a8c74"/>
+<rect x="14" y="5" width="256" height="24" fill="#020b09"/>
+<text x="22" y="21" style="font-size:12px"><tspan class="forte" style="letter-spacing:.3px">maykeesa@github</tspan><tspan class="dim" style="letter-spacing:.3px"> ~ $ </tspan><tspan style="letter-spacing:.3px">cat contato.txt</tspan> <tspan class="cursor">_</tspan></text>
+</svg>

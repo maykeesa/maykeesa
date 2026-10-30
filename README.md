@@ -4,8 +4,12 @@
 <img src="./stack-banner.svg" width="860" alt="Stack: Java, Kotlin, Groovy, Python, Spring Boot, Grails, JPA, PostgreSQL, MySQL, Oracle, MongoDB, Docker, RabbitMQ, Git, Linux" />
 </p>
 
-<h3 align="left"><code>maykeesa@github ~ $ cat contato.txt</code></h3>
+<p align="left">
+<img src="./divider.svg" width="860" alt="" />
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-8ff7d4?style=for-the-badge&logo=linkedin&logoColor=8ff7d4&labelColor=020b09)](https://www.linkedin.com/in/maykeesa/)
-[![Email](https://img.shields.io/badge/EMAIL-8ff7d4?style=for-the-badge&logo=gmail&logoColor=8ff7d4&labelColor=020b09)](mailto:maykeesa.contato@gmail.com)
-[![Steam](https://img.shields.io/badge/STEAM-8ff7d4?style=for-the-badge&logo=steam&logoColor=8ff7d4&labelColor=020b09)](https://steamcommunity.com/id/MaykeESA/)
+<p align="center">
+<a href="https://www.linkedin.com/in/maykeesa/"><img src="https://img.shields.io/badge/LINKEDIN-8ff7d4?style=for-the-badge&labelColor=020b09" alt="LinkedIn" /></a>
+<a href="mailto:maykeesa.contato@gmail.com"><img src="https://img.shields.io/badge/EMAIL-8ff7d4?style=for-the-badge&labelColor=020b09" alt="Email" /></a>
+<a href="https://steamcommunity.com/id/MaykeESA/"><img src="https://img.shields.io/badge/STEAM-8ff7d4?style=for-the-badge&labelColor=020b09" alt="Steam" /></a>
+</p>
