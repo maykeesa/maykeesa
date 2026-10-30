@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="400" viewBox="0 0 490 400">
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;font-size:11px;fill:#8ff7d4}
+.dim{fill:#3fae8f}.fraco{fill:#1f6a56}.forte{fill:#e8fff7;font-weight:700}
+.cabecalho{font-size:11px;letter-spacing:1.5px}
+
+.cursor{animation:pisca 1s steps(1) infinite}
+@keyframes pisca{50%{opacity:0}}
+.glitch{animation:glitch 5s infinite steps(1)}
+@keyframes glitch{0%,93%,100%{transform:none}94%{transform:translateX(-2px)}96%{transform:translateX(3px)}98%{transform:translateX(-1px)}}
+.varre{animation:varre 7s linear infinite}
+@keyframes varre{from{transform:translateY(0)}to{transform:translateY(var(--h))}}
+
+.ln{opacity:0;animation:entra .3s steps(4) forwards}
+@keyframes entra{to{opacity:1}}
+</style>
+<defs>
+<filter id="brilho" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".4"/></pattern>
+<linearGradient id="feixe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ff7d4" stop-opacity="0"/><stop offset="1" stop-color="#8ff7d4" stop-opacity=".07"/></linearGradient>
+<linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#04150f"/><stop offset="1" stop-color="#020b09"/></linearGradient>
+</defs>
+<rect width="490" height="400" fill="url(#fundo)"/>
+<rect class="varre" style="--h:400px" x="0" y="-40" width="490" height="40" fill="url(#feixe)"/>
+<rect width="490" height="400" fill="url(#scan)"/>
+<rect x="0.6" y="0.6" width="488.8" height="398.8" fill="none" stroke="#2a8c74" stroke-width="1.2"/>
+<rect x="4.5" y="4.5" width="481" height="391" fill="none" stroke="#1f6a56" stroke-width="0.8"/>
+<text class="cabecalho dim" x="14" y="19">BOOT.BAT</text><text class="cabecalho fraco" x="476" y="19" text-anchor="end">PORT......2</text><line x1="4.5" y1="26" x2="485.5" y2="26" stroke="#1f6a56" stroke-width="0.8"/><g class="ln" style="animation-delay:0.30s"><text class="fraco" x="20" y="48">@ECHO OFF</text></g>
+<g class="ln" style="animation-delay:0.43s"><text class="fraco" x="20" y="64.5">TITLE MAYKE-OS BIOS</text></g>
+<g class="ln" style="animation-delay:0.56s"><text class="fraco" x="20" y="81.0">MODE CON: COLS=80 LINES=30</text></g>
+<g class="ln" style="animation-delay:0.69s"><text class="fraco" x="20" y="97.5">COLOR 0A</text></g>
+<g class="ln" style="animation-delay:0.82s"><text class="fraco" x="20" y="114.0">CLS</text></g>
+<g class="ln" style="animation-delay:0.95s"><text class="forte" x="20" y="136.5" style="font-size:13px">:: MAYKEESA@GITHUB</text></g>
+<g class="ln" style="animation-delay:1.08s"><text class="dim" x="20" y="161.0">ECHO NOME........:</text><text class="" x="132" y="161.0">Mayke Erick S. Andrade</text></g>
+<g class="ln" style="animation-delay:1.21s"><text class="dim" x="20" y="177.5">ECHO CLASSE......:</text><text class="" x="132" y="177.5">Desenvolvedor Back-end</text></g>
+<g class="ln" style="animation-delay:1.34s"><text class="dim" x="20" y="194.0">ECHO FOCO........:</text><text class="" x="132" y="194.0">Java / Spring Boot · APIs REST</text></g>
+<g class="ln" style="animation-delay:1.47s"><text class="dim" x="20" y="210.5">ECHO ATUAL.......:</text><text class="" x="132" y="210.5">SEFAZ-SE · Dev Jr · desde 10/2024</text></g>
+<g class="ln" style="animation-delay:1.60s"><text class="dim" x="20" y="227.0">ECHO ANTES.......:</text><text class="" x="132" y="227.0">PGM Aracaju · 08/2022 a 06/2024</text></g>
+<g class="ln" style="animation-delay:1.73s"><text class="dim" x="20" y="243.5">ECHO GRAD........:</text><text class="" x="132" y="243.5">Ciência da Computação · UNIT 2025</text></g>
+<g class="ln" style="animation-delay:1.86s"><text class="dim" x="20" y="260.0">ECHO POS.........:</text><text class="" x="132" y="260.0">Sist. Embarcados Automotivos · UTFPR</text></g>
+<g class="ln" style="animation-delay:1.99s"><text class="dim" x="20" y="276.5">ECHO LINGUAGENS..:</text><text class="" x="132" y="276.5">Java · Kotlin · Groovy · Python</text></g>
+<g class="ln" style="animation-delay:2.12s"><text class="dim" x="20" y="293.0">ECHO FRAMEWORKS..:</text><text class="" x="132" y="293.0">Spring Boot · Grails · JPA</text></g>
+<g class="ln" style="animation-delay:2.25s"><text class="dim" x="20" y="309.5">ECHO DADOS.......:</text><text class="" x="132" y="309.5">PostgreSQL · MySQL · Oracle · Mongo</text></g>
+<g class="ln" style="animation-delay:2.38s"><text class="dim" x="20" y="326.0">ECHO INFRA.......:</text><text class="" x="132" y="326.0">Docker · RabbitMQ · Linux · Maven</text></g>
+<g class="ln" style="animation-delay:2.51s"><text class="dim" x="20" y="342.5">ECHO TESTES......:</text><text class="" x="132" y="342.5">JUnit · Mockito · 100% branch cov.</text></g>
+<g class="ln" style="animation-delay:2.64s"><text class="dim" x="20" y="359.0">ECHO PRATICAS....:</text><text class="" x="132" y="359.0">SOLID · Clean Arch. · Patterns</text></g>
+<g class="ln" style="animation-delay:2.77s"><text class="dim" x="20" y="375.5">ECHO STATUS......:</text><text class="forte" x="132" y="375.5">ONLINE</text></g>
+<g class="ln" style="animation-delay:2.90s"><text class="dim" x="20" y="396.0">C:\MAYKE&gt;</text></g><rect class="cursor" x="82" y="386.0" width="7" height="12" fill="#8ff7d4"/>
+</svg>
