@@ -1,0 +1,4 @@
+# CI diário (heatmap)
+requests==2.32.3
+beautifulsoup4==4.12.3
+# Só local, pra regenerar o retrato: pip install pillow numpy opencv-python-headless
