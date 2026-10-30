@@ -18,6 +18,7 @@ ENTRADA = RAIZ / "data" / "portrait-prepped.png"
 SAIDA = RAIZ / "mayke-ascii.svg"
 
 RAMPA = " .`:-=+*cs#%@"
+COLUNAS = 150
 FAIXAS = [(1, "t1"), (4, "t2"), (7, "t3"), (10, "t4")]
 CSS_FAIXAS = f".t1{{fill:#1d6b57}}.t2{{fill:{MEDIO}}}.t3{{fill:{VERDE}}}.t4{{fill:{BRANCO}}}"
 
@@ -117,7 +118,7 @@ def desenhar_grade(grade: list[str], x: float, y: float, largura: float, altura:
 def renderizar() -> str:
     largura, altura = 370, 400
     imagem = Image.open(ENTRADA).convert("L") if ENTRADA.exists() else cena()
-    clips, textos = desenhar_grade(gerar_grade(imagem, 104), 22, 40, largura - 44, altura - 60, "l")
+    clips, textos = desenhar_grade(gerar_grade(imagem, COLUNAS), 22, 40, largura - 44, altura - 60, "l")
     css = f"text{{white-space:pre}}\n{CSS_FAIXAS}"
     corpo = f"""<defs>{clips}</defs>
 {moldura(largura, altura, "NEURAL.TXT", "PORT......1")}
