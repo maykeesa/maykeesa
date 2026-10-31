@@ -1,7 +1,8 @@
 """Recorta o fundo da foto (GrabCut) e realça contraste (CLAHE).
 
-Uso: python scripts/prep_photo.py foto.png
-Saída: data/portrait-prepped.png — tons de cinza, fundo preto (0).
+Uso: python scripts/prep_photo.py foto.png [recorte] [saida.png]
+`recorte` = lado do quadrado em fração da menor dimensão da foto (padrão 0.48; aumente se cortar o rosto).
+Saída: data/portrait-prepped.png (ou o caminho dado em `saida`, ex.: data/avatar-prepped.png) — tons de cinza, fundo preto (0).
 Roda só local; o CI não precisa disso.
 """
 import sys
@@ -10,6 +11,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
+GAMA = 1.25  # >1 escurece os tons médios: o ASCII ganha contraste (o conversor clareia com gama 0.75)
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "data" / "portrait-prepped.png"
 
@@ -50,7 +52,7 @@ def enquadrar_busto(imagem: np.ndarray, mascara: np.ndarray, lado_rel: float = 0
     return imagem[corte], mascara[corte]
 
 
-def preparar(caminho: str) -> None:
+def preparar(caminho: str, recorte: float = 0.48, saida: Path = SAIDA) -> None:
     imagem = cv2.imread(caminho, cv2.IMREAD_COLOR)
     if imagem is None:
         raise SystemExit(f"Não consegui abrir {caminho}")
@@ -58,7 +60,7 @@ def preparar(caminho: str) -> None:
         imagem = (imagem / 257).astype(np.uint8)
 
     mascara = remover_fundo(imagem)
-    imagem, mascara = enquadrar_busto(imagem, mascara)
+    imagem, mascara = enquadrar_busto(imagem, mascara, recorte)
     cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
     # estica o histograma usando só a metade de cima (rosto), não a camiseta
@@ -74,14 +76,19 @@ def preparar(caminho: str) -> None:
     inicio = int(altura * 0.66)
     atenuacao[inicio:] = np.linspace(1.0, 0.55, altura - inicio)
     composta = realcada.astype(np.float32) * (mascara.astype(np.float32) / 255) * atenuacao[:, None]
-    composta = np.clip(composta, 0, 255).astype(np.uint8)
+    composta = (np.clip(composta, 0, 255) / 255) ** GAMA * 255
+    composta = composta.astype(np.uint8)
 
-    SAIDA.parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(SAIDA), composta)
-    print(f"foto preparada → {SAIDA}")
+    saida.parent.mkdir(parents=True, exist_ok=True)
+    cv2.imwrite(str(saida), composta)
+    print(f"foto preparada → {saida}")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        raise SystemExit("uso: python scripts/prep_photo.py foto.png")
-    preparar(sys.argv[1])
+    if len(sys.argv) not in (2, 3, 4):
+        raise SystemExit("uso: python scripts/prep_photo.py foto.png [recorte] [saida.png]")
+    preparar(
+        sys.argv[1],
+        float(sys.argv[2]) if len(sys.argv) >= 3 else 0.48,
+        Path(sys.argv[3]) if len(sys.argv) == 4 else SAIDA,
+    )

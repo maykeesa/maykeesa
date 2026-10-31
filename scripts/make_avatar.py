@@ -1,6 +1,7 @@
 """Gera avatar.png: o retrato ASCII verde-fósforo em PNG quadrado, pra usar de foto de perfil.
 
-Usa data/portrait-prepped.png (mesma entrada do painel). Roda só local (precisa da fonte Consolas).
+Usa data/avatar-prepped.png se existir (foto preparada com prep_photo.py), senão a arte do painel.
+Roda só local (precisa da fonte Consolas).
 Uso: python scripts/make_avatar.py [lado_em_px]
 """
 import sys
@@ -11,11 +12,12 @@ from PIL import Image, ImageDraw, ImageFont
 from make_ascii_svg import ENTRADA, FAIXAS, RAMPA, gerar_grade
 from tema import BRANCO, FUNDO, MEDIO, VERDE
 
+AVATAR_ENTRADA = ENTRADA.with_name("avatar-prepped.png")
 SAIDA = Path(__file__).resolve().parent.parent / "avatar.png"
 FONTE = "C:/Windows/Fonts/consolab.ttf"
 CORES = ["#1d6b57", MEDIO, VERDE, BRANCO]
-COLUNAS = 72
-ZOOM = 0.82  # fração central da imagem; o GitHub corta o avatar em círculo
+COLUNAS = 100
+ZOOM = 1.0  # fração central da imagem; o GitHub corta o avatar em círculo
 
 
 def cor_do(caractere: str) -> str | None:
@@ -28,7 +30,7 @@ def cor_do(caractere: str) -> str | None:
 
 
 def gerar(lado: int) -> None:
-    arte = Image.open(ENTRADA).convert("L")
+    arte = Image.open(AVATAR_ENTRADA if AVATAR_ENTRADA.exists() else ENTRADA).convert("L")
     lado_corte = round(arte.width * ZOOM)
     esquerda, topo = (arte.width - lado_corte) // 2, round((arte.height - lado_corte) * 0.6)
     grade = gerar_grade(arte.crop((esquerda, topo, esquerda + lado_corte, topo + lado_corte)), COLUNAS)
