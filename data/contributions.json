@@ -1,6 +1,6 @@
 {
  "usuario": "maykeesa",
- "total": 747,
+ "total": 771,
  "dias": [
   {
    "data": "2025-11-02",
@@ -44,7 +44,7 @@
   },
   {
    "data": "2025-11-10",
-   "nivel": 2,
+   "nivel": 3,
    "contagem": 13
   },
   {
@@ -184,7 +184,7 @@
   },
   {
    "data": "2025-12-08",
-   "nivel": 2,
+   "nivel": 3,
    "contagem": 13
   },
   {
@@ -324,7 +324,7 @@
   },
   {
    "data": "2026-01-05",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -569,7 +569,7 @@
   },
   {
    "data": "2026-02-23",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -719,12 +719,12 @@
   },
   {
    "data": "2026-03-25",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
    "data": "2026-03-26",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -744,7 +744,7 @@
   },
   {
    "data": "2026-03-30",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1044,7 +1044,7 @@
   },
   {
    "data": "2026-05-29",
-   "nivel": 3,
+   "nivel": 4,
    "contagem": 21
   },
   {
@@ -1114,7 +1114,7 @@
   },
   {
    "data": "2026-06-12",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1134,7 +1134,7 @@
   },
   {
    "data": "2026-06-16",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1189,7 +1189,7 @@
   },
   {
    "data": "2026-06-27",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1304,7 +1304,7 @@
   },
   {
    "data": "2026-07-20",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -1319,7 +1319,7 @@
   },
   {
    "data": "2026-07-23",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -1374,7 +1374,7 @@
   },
   {
    "data": "2026-08-03",
-   "nivel": 2,
+   "nivel": 3,
    "contagem": 16
   },
   {
@@ -1384,7 +1384,7 @@
   },
   {
    "data": "2026-08-05",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1424,7 +1424,7 @@
   },
   {
    "data": "2026-08-13",
-   "nivel": 2,
+   "nivel": 3,
    "contagem": 15
   },
   {
@@ -1529,12 +1529,12 @@
   },
   {
    "data": "2026-09-03",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
    "data": "2026-09-04",
-   "nivel": 2,
+   "nivel": 3,
    "contagem": 14
   },
   {
@@ -1564,7 +1564,7 @@
   },
   {
    "data": "2026-09-10",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 7
   },
   {
@@ -1659,7 +1659,7 @@
   },
   {
    "data": "2026-09-29",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -1749,7 +1749,7 @@
   },
   {
    "data": "2026-10-17",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -1774,7 +1774,7 @@
   },
   {
    "data": "2026-10-22",
-   "nivel": 1,
+   "nivel": 2,
    "contagem": 8
   },
   {
@@ -1814,18 +1814,23 @@
   },
   {
    "data": "2026-10-30",
-   "nivel": 3,
+   "nivel": 4,
    "contagem": 24
   },
   {
    "data": "2026-10-31",
-   "nivel": 2,
-   "contagem": 15
+   "nivel": 3,
+   "contagem": 17
   },
   {
    "data": "2026-11-01",
-   "nivel": 0,
-   "contagem": 0
+   "nivel": 1,
+   "contagem": 5
+  },
+  {
+   "data": "2026-11-02",
+   "nivel": 3,
+   "contagem": 17
   }
  ]
 }
