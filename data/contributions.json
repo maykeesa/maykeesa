@@ -1,6 +1,6 @@
 {
  "usuario": "maykeesa",
- "total": 771,
+ "total": 774,
  "dias": [
   {
    "data": "2025-11-02",
@@ -1829,8 +1829,13 @@
   },
   {
    "data": "2026-11-02",
-   "nivel": 3,
-   "contagem": 17
+   "nivel": 4,
+   "contagem": 20
+  },
+  {
+   "data": "2026-11-03",
+   "nivel": 0,
+   "contagem": 0
   }
  ]
 }
