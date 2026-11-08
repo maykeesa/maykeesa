@@ -1,42 +1,7 @@
 {
  "usuario": "maykeesa",
- "total": 784,
+ "total": 785,
  "dias": [
-  {
-   "data": "2025-11-02",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-03",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-04",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-05",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-06",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-07",
-   "nivel": 0,
-   "contagem": 0
-  },
-  {
-   "data": "2025-11-08",
-   "nivel": 0,
-   "contagem": 0
-  },
   {
    "data": "2025-11-09",
    "nivel": 0,
@@ -1854,6 +1819,11 @@
   },
   {
    "data": "2026-11-07",
+   "nivel": 1,
+   "contagem": 1
+  },
+  {
+   "data": "2026-11-08",
    "nivel": 0,
    "contagem": 0
   }
